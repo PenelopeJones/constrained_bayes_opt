@@ -1,5 +1,5 @@
 """
-Adaptation of the Expected Improvement acquisition function to include known constraint
+Adaptation of the Expected Improvement acquisition function from GPFlowOpt to include known constraint
 on the domain that should be explored. Note this is slightly different to (and more straightforward than)
 the case where there is an unknown constraint.
 """
@@ -30,9 +30,6 @@ def heaviside(x):
 
     """
     return 0.5 * (1 + tf.math.sign(x))
-
-
-
 
 
 
